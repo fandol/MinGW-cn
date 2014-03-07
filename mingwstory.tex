@@ -35,12 +35,19 @@
 \usepackage{wallpaper}          % For the titlepage
 
 % use \includeonly to only parse part of the included files.
-\includeonly{}
+\includeonly{intro}
 
 % define some commands in case they'll be used more than ones.
-\newcommand{\thename}{MinGW and MSYS on board}
-\newcommand{\thetitle}{MinGW、MSYS 上手指南}
+\newcommand{\thename}{MinGW on board}
+\newcommand{\thetitle}{MinGW 上手指南}
+\newcommand{\theauthor}{LiTuX~等}
 \newcommand{\thepublisher}{饭朵文化教育}
+\newcommand{\thedate}{2014 年 3 月}
+
+\usepackage{hyperref}           % At last
+\hypersetup{
+    colorlinks=true,
+}
 
 \begin{document}
 % For a book, there need some well known structures, e.g.:
@@ -58,8 +65,7 @@
 % All the above are called the `front matter` part.
 % and the body part should go after \mainmatter, we use \include for them.
 \mainmatter
-中文书籍结构示例。
-\include{chapters}
+\include{intro}
 
 % Appendix et. al. goes after \appendix
 \appendix

@@ -2,7 +2,7 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 % -*- coding: utf-8 -*-
-% vim: set nobk noudf fdl=99 tw=76 fo+=Mm cc+=+2 :
+% vim: set nobk noudf fdl=99 tw=75 fo+=Mm cc+=+2 :
 %
 % mingwstory: A simple handbook for MinGW/MSYS for Chinese users.
 % preface.tex: prologue and preface for mingwstory.
@@ -19,7 +19,60 @@
 \label{ch:prologue}
 我能够吞下玻璃而不伤害身体。
 
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
 \chapter{前言}
 \label{ch:preface}
-我能够吞下玻璃而不伤害身体。
+
+\begin{flushright}
+    闹太套——小明
+\end{flushright}
+
+我终于把这个坑挖起来了。
+
+若干年之前，我一定想不到将来的某一天，我竟然会不知天高地厚图样图森破的决定
+挖这个坑，那时的我，头发还没有现在这么少……
+
+接触到 MinGW 应该是 2008 年了。之前在 Linux 平台做过一点简单的开发，
+而 Windows 平台还不得不使用陈旧的 VC 6.0，这对于一个已经逐渐习惯 vim，
+喜欢从终端运行 make、喜欢 vim 的 quickfix 窗口的小白来说，
+IDE 实在不够酷，不够屌。于是便开始了各种折腾，——比如从 VC 98、VC 2003、
+VC 2005 提取出最小 C/C++ 开发环境（其实就是个精简版的 Windows SDK），
+然后想尽办法让 cl 跟 vim 和平共处共同工作，甚至还通过 Wine 在 Linux 平台
+用 nmake 和 cl 来“交叉”开发 Windows 应用……
+
+之后，在 CUMCM 前夕，Chaosconst 同学想找 Windows 下的 gcc 用，而又不喜欢
+Cygwin 版 gcc，于是找到了 MinGW 这个高端大气上档次的东东。
+随着之后对它的了解和使用，越发觉得这是个足够狂拽炫酷叼炸天的东西，
+所以尽管之后在 Windows 平台上的时间远超过 Linux 平台，
+却一直坚守在 MinGW 平台，——一直过了五年。
+
+这期间，MinGW 相比过去完善了许多，并且后来又发现了 MinGW--W64 这么给力的东
+西。尽管使用过程中也遇到过各种不太对的地方，用一些 dirty trick 对付之，
+或者提交 issue report……也算见证了 MinGW 的成长。
+
+当然，必须要感谢许多其他先行者的博文日志。
+
+于是我一直觉得，我也应该把自己折腾这些东西的过程中遇到的问题、如何对付等，
+都贡献出来。而一直以来我都没有自己的电脑，也没有做过正经的个人网站，于是这
+些“一直觉得”该做的事情，却只能一直放着，连个坑也只是在想法里面挖过，
+没实际行动。
+
+所以当 libcstl 群里的老隐童鞋提到弄这么一个教程的时候，
+我觉得是时候开挖了，——我将不是一个人在战斗，而且这个“教程”会是有意义的。
+
+其实说“教程”也并不合适，这个东西至少我在开挖的时候，定位更像是一组日志的整
+理版，——尽管这个日志并不存在，或者说大部分存在于我的记忆中。
+所以，我只能很没信心的说，我不敢保证这个东西的质量有多高，
+毕竟这么多年以来，我还是个业余的开发者。
+如果您有更好的建议或者发现什么问题，欢迎提出，也欢迎加入到文档的撰写中。
+
+Welcome on board. :)
+
+\begin{flushright}
+    LiTuX，北京海淀
+
+    2014 年 3 月 7 日\footnote{传说中的女生节}
+\end{flushright}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
 
